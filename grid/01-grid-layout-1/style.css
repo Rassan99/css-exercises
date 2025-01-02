@@ -33,7 +33,7 @@ html {
 }
 
 .article {
-  background-color: #7E1DC3;
+  background-color: #7e1dc3;
 }
 
 .footer {
@@ -45,4 +45,29 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+.container {
+  display: grid;
+  grid-template: 7% 23% auto 10% / 11% 53%;
+  grid-template-areas:
+    "header header "
+    "sidebar nav "
+    "sidebar art "
+    "footer footer ";
+  gap: 15px;
+}
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+}
+.nav {
+  grid-area: nav;
+}
+.article {
+  grid-area: art;
+}
+.footer {
+  grid-area: footer;
 }
